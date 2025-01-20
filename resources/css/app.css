@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+p{
+    @apply text-base;
+
+}
+h1{
+    @apply text-3xl;
+}
+h2{
+    @apply text-2xl;
+}
+h3{
+    @apply text-xl;
+}
+h4{
+    @apply text-lg;
+}
+
+/* Forms */
+.form-field{
+    @apply flex gap-2 my-2;
+}
+.form{
+    @apply max-w-4xl mx-auto my-4;
+}
+
+/* buttons */
+.button{
+    @apply px-4 py-2 rounded-lg cursor-pointer;
+    transition: filter 0.3s;
+}
+.button:hover{
+    filter: brightness(85%);
+}
+.btn-image{
+    @apply p-2 cursor-pointer;
+}
